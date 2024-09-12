@@ -1,5 +1,12 @@
 Changelog
 -------
+
+* 1.5 - 2024/09/12
+  * Add new version
+  * Update the compatibility to our sites
+  
+---
+
 * 1.4.9 - 2024/05/06
   * Reuse DWP token
   * Avoid cancelling order on notification 

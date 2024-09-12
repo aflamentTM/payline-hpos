@@ -27,6 +27,7 @@ Author
 * Vincent Pietri (https://www.tbdgroup.com/)
 * Nicolas MOLLET (https://github.com/thermesmarins)
 * Timothe BORDIGA (https://github.com/roux1max)
+* Arnaud Flament (https://github.com/aflamentTM)
 
 
 License
