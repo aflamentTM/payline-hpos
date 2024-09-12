@@ -1140,13 +1140,16 @@ cancelPaylinePayment = function ()
 
             } elseif ($res['result']['code'] == '02319' || $res['result']['code'] == '02014'){
                 $message = __('Buyer cancelled his payment', 'payline');
+                $order->add_order_note(__('Buyer cancelled his payment', 'payline'));
                 $status = 'cancelled';
             } elseif ($res['result']['code'] == '02304' || $res['result']['code'] == '02324'){
                 $message = __('Payment session expired without transaction', 'payline');
+                $order->add_order_note(__('Payment session expired without transaction', 'payline'));
                 $status = 'cancelled';
 
             }elseif ($res['result']['code'] == '02534' || $res['result']['code'] == '02324'){
                 $message = __('Payment session expired with no redirection on payment page', 'payline');
+
                 $status = 'cancelled';
             } else {
                 if($res['transaction']['id']){
